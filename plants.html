@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plant Library | Fern &amp; Field Garden Co., Ocala FL</title>
+<meta name="description" content="Browse native and Florida-friendly plants grown at Fern &amp; Field in Ocala, with light, water and size notes.">
+<link rel="canonical" href="https://pontavia-consulting.github.io/pontavia-sample-better/plants.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Plant Library | Fern &amp; Field Garden Co., Ocala FL">
+<meta property="og:description" content="Browse native and Florida-friendly plants grown at Fern &amp; Field in Ocala, with light, water and size notes.">
+<meta property="og:url" content="https://pontavia-consulting.github.io/pontavia-sample-better/plants.html">
+<meta name="theme-color" content="#1F3D2C">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/lora.woff" as="font" type="font/woff" crossorigin>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body><div class="demo-bar"><div class="wrap"><span>Sample <b>Better</b> website by Pontavia Consulting. Fern &amp; Field is a made-up business, so nothing you enter is sent anywhere.</span><a href="https://pontavia-consulting.github.io/pontavia-samples/">Compare all three packages</a></div></div><header class="site-head"><div class="wrap">
+<a class="logo" href="index.html"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="23" fill="#1F3D2C"/><circle cx="31" cy="15" r="6" fill="#E8B21C"/><path d="M24 40 C24 30 22 22 15 15" stroke="#EEF3E8" stroke-width="2.2" fill="none" stroke-linecap="round"/><path d="M16 16 Q 10 22 15 28 Q 21 23 16 16Z" fill="#8DB57E"/><path d="M21 23 Q 13 26 16 34 Q 24 30 21 23Z" fill="#B9D3AA"/><path d="M24 31 Q 31 26 34 31 Q 29 37 24 31Z" fill="#8DB57E"/></svg><span><b>Fern &amp; Field</b><small>Garden Co. — Ocala, Florida</small></span></a>
+<nav class="nav" id="nav" aria-label="Main"><a href="services.html">Services</a><a href="plants.html" aria-current="page">Plant library</a><a href="gallery.html">Our work</a><a href="workshops.html">Workshops</a><a href="journal.html">Journal</a><a href="team.html">About us</a><a href="contact.html">Contact</a><a class="btn small" href="design.html">Book a design visit</a></nav>
+
+<button class="menu-btn" aria-expanded="false" aria-controls="nav" aria-label="Menu"><span></span><span></span><span></span></button>
+</div></header><main id="main"><section class="page-hero"><div class="wrap"><div class="crumbs"><a href="index.html">Home</a> / <a href="plants.html">Plant library</a></div><h1>Plant library</h1><p class="lede">Everything we grow, with honest notes on where it does well. Ask at the counter and we will walk you to it.</p></div></section>
+<section class="section"><div class="wrap">
+  <div class="toolbar"><div class="chips" role="group" aria-label="Filter by type"><button class="chip" type="button" data-cat="all" aria-pressed="true">All plants</button><button class="chip" type="button" data-cat="natives" aria-pressed="false">Florida natives</button><button class="chip" type="button" data-cat="pollinator" aria-pressed="false">Pollinator plants</button><button class="chip" type="button" data-cat="shrubs" aria-pressed="false">Shrubs and hedges</button><button class="chip" type="button" data-cat="grasses" aria-pressed="false">Grasses</button><button class="chip" type="button" data-cat="trees" aria-pressed="false">Trees</button><button class="chip" type="button" data-cat="succulents" aria-pressed="false">Succulents</button><button class="chip" type="button" data-cat="houseplants" aria-pressed="false">Houseplants</button></div></div>
+  <div class="toolbar">
+    <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center">
+      <label class="sr" for="lib-q">Search plants</label><input id="lib-q" class="search" type="search" placeholder="Search by name" data-lib-q>
+      <label class="sr" for="lib-light">Light</label><select id="lib-light" data-lib-light style="width:auto"><option value="">Any light</option><option>Full sun</option><option>Part shade</option><option>Shade</option></select>
+      <label class="check" style="font-weight:500"><input type="checkbox" data-lib-native style="width:18px;height:18px;accent-color:var(--oak)"> Florida natives only</label>
+    </div>
+    <span class="count" data-lib-count aria-live="polite"></span>
+  </div>
+  <div class="grid g4" data-lib-grid></div>
+</div></section>
+<div class="modal" data-plant-modal hidden role="dialog" aria-modal="true" aria-labelledby="pm-title">
+  <div class="modal-box" style="width:min(100%,680px)">
+    <div class="modal-head"><h2 id="pm-title" style="font-size:30px;margin:0" data-pm-name></h2><button class="icon-btn" type="button" data-close aria-label="Close">×</button></div>
+    <div class="grid g2" style="gap:24px" id="pm-grid"><div class="art-tile" data-pm-art></div><div><p class="latin" data-pm-latin style="font-style:italic;color:var(--muted)"></p><p data-pm-blurb></p><dl class="summary-box" data-pm-facts style="display:grid;grid-template-columns:auto 1fr;gap:6px 14px"></dl></div></div>
+    <form class="demo-form" novalidate style="margin-top:22px" data-success="Thanks, {name}. We set one aside at the front counter for 3 days.">
+      <h3 style="font-size:20px">Hold one at the nursery</h3>
+      <div class="row2"><div class="field"><label for="h-name">Name</label><input id="h-name" name="name" required></div><div class="field"><label for="h-phone">Phone</label><input id="h-phone" name="phone" type="tel" required></div></div>
+      <button class="btn small" type="submit">Hold it for me</button>
+    </form>
+  </div>
+</div>
+<style>@media (max-width:620px){#pm-grid{grid-template-columns:1fr !important}}</style></main><footer class="site-foot"><div class="wrap">
+<div class="cols">
+<div><a class="logo" href="index.html"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="23" fill="#1F3D2C"/><circle cx="31" cy="15" r="6" fill="#E8B21C"/><path d="M24 40 C24 30 22 22 15 15" stroke="#EEF3E8" stroke-width="2.2" fill="none" stroke-linecap="round"/><path d="M16 16 Q 10 22 15 28 Q 21 23 16 16Z" fill="#8DB57E"/><path d="M21 23 Q 13 26 16 34 Q 24 30 21 23Z" fill="#B9D3AA"/><path d="M24 31 Q 31 26 34 31 Q 29 37 24 31Z" fill="#8DB57E"/></svg><span><b>Fern &amp; Field</b><small>Garden Co. — Ocala, Florida</small></span></a><p>Native plants, landscape design and honest advice for Marion County yards since 2014.</p>
+<p>2200 Fern Hollow Rd, Ocala, FL 34471<br><a href="tel:+13525550142" style="display:inline">(352) 555-0142</a></p></div>
+<div><h4>Explore</h4><a href="plants.html">Plant library</a><a href="gallery.html">Our work</a><a href="workshops.html">Workshops</a><a href="journal.html">Garden journal</a></div><div><h4>Services</h4><a href="design.html">Book a design visit</a><a href="services.html">All services</a><a href="faq.html">Questions</a></div><div><h4>Company</h4><a href="team.html">Meet the team</a><a href="contact.html">Contact and hours</a></div>
+</div>
+<div class="base"><span>© 2026 Fern &amp; Field Garden Co. A fictional business.</span><span>Sample site built by <a href="https://pontavia-consulting.github.io/pontavia-samples/" style="display:inline">Pontavia Consulting</a></span></div>
+</div></footer><button class="edit-fab" type="button" data-edit-toggle>Try the owner's editor</button><script src="assets/art.js" defer></script>
+<script src="assets/data.js" defer></script>
+<script src="assets/core.js" defer></script>
+<script src="assets/site.js" defer></script>
+</body>
+</html>
