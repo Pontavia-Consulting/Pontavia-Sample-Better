@@ -12,7 +12,7 @@ A 10-page site for a business that takes bookings and wants to keep its own cont
 
 - Everything in Good
 - Up to 10 pages
-- Content editor demo: the "Try the owner's editor" button shows how the owner edits text in place
+- Owner's editor demo (a preview only; real sites are updated for you through a care plan)
 - Online booking: 4-step visit booking with live time slots, photo upload, summary and add-to-calendar file
 - Custom forms: workshop seat reservations, "hold this plant" requests
 - Google Business Profile features: live open/closed status, hours, map, review rating
